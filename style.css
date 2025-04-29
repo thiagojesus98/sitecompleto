@@ -291,3 +291,56 @@ line-height: 1.6rem;
     background-size: cover;
     /* apesar de aumentar,a  imagem nao perde a qualidade */
 }
+
+#controle-fonte {
+    position: fixed;
+    top:90px;
+    right: 110px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; /* Garante que a div fique acima de outros elementos */;
+  }
+
+  #controle-fonte button {
+    background-color:  #6f4e37;
+    color: #fff;
+    border: none;
+    margin: 2px ;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #controle-fonte button:hover {
+    background-color: #5a392a;
+  }
+  <style>
+  body {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+  }
+
+  .high-contrast {
+    background-color: black;
+    color: yellow;
+    border: 2px solid white;
+  }
+
+  #contrastButton {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: gray;
+    color: white;
+  }
+
+  .high-contrast #contrastButton {
+    background-color: yellow;
+    color: black;
+  }
+
